@@ -6,8 +6,11 @@ import About from "./components/About";
 export default function Home() {
   return (
     <main className="flex flex-col items-center h-screen">
+      <img className="absolute left-0"  src="/gradien.svg" alt="" />
+      <img className="absolute bottom-[-300px] right-0"  src="/gradien-2.svg" alt="" />
       <Nav/>
       <Hero/>
+      <About/>
     </main>
   );
 }

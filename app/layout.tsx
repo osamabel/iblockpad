@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html dir="rtl">
       <body className="font-graphik-arabic font-medium">{children}</body>
     </html>
   );

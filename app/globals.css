@@ -18,14 +18,14 @@
   }
 }
 
+img {
+  user-select: none; /* Prevent text selection */
+  pointer-events: none; /* Disable pointer events */
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #000000;
+  color: white
 }
 
 @layer utilities {
@@ -56,4 +56,12 @@ body {
   to {
     height: 100%;
   }
+}
+
+.card{
+  border: 1px solid rgba(88,101,242,0.2);
+  background: rgb(88,101,242);
+  background: linear-gradient(340deg, rgba(88,101,242,0.1601234243697479) 0%, rgba(88,101,242,0) 30%, rgba(88,101,242,0) 65%, rgba(88,101,242,0.1153054971988795) 100%);
+  border-radius: 18px; /* this doesn't work */
+
 }
