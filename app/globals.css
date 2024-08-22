@@ -61,7 +61,79 @@ body {
 .card{
   border: 1px solid rgba(88,101,242,0.2);
   background: rgb(88,101,242);
-  background: linear-gradient(340deg, rgba(88,101,242,0.1601234243697479) 0%, rgba(88,101,242,0) 30%, rgba(88,101,242,0) 65%, rgba(88,101,242,0.1153054971988795) 100%);
+  background: linear-gradient(340deg, rgba(88,101,242,0.1601234243697479) 0%, rgba(88,101,242,0) 30%, rgba(88,101,242,0) 65%, rgba(88,101,242,0.1153054971988795) 90%);
   border-radius: 18px; /* this doesn't work */
+}
 
+.flip-container {
+  perspective: 1000px; /* Define the 3D perspective */
+}
+.flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s all;
+  opacity: 0;
+  transform: rotateX(-100deg);
+    
+  animation: flip linear both;
+  animation-timeline: view(block);
+  animation-range: cover 25% cover 30%;
+}
+@keyframes flip {
+  to {transform: rotateX(0deg);opacity: 1;}
+}
+
+
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-img {
+  opacity: 0;
+  transform: translateX(300px);
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+.delay-1 {
+  animation-delay: 0s;
+}
+
+.delay-2 {
+  animation-delay: 0.15s;
+}
+
+.delay-3 {
+  animation-delay: .1s;
+}
+
+.expand {
+  transition: transform 0.8s all;
+  height: 0px;
+  overflow: hidden; /* Ensure content doesn't show until expanded */
+  animation: expanding 0.8s ease-in-out forwards;
+  animation-delay: .6s;
+}
+
+@keyframes expanding {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fading 0.9s ease-in-out forwards;
+  animation-delay: .4s;
+}
+
+@keyframes fading {
+  to {
+    opacity: 1;
+  }
 }

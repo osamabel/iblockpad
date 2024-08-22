@@ -3,7 +3,7 @@ import React from 'react'
 
 function Nav() {
   return (
-    <div className='min-h-[100px] w-full flex items-center justify-center'>
+    <div className='min-h-[100px] w-full flex items-center justify-center absolute top-0'>
       <div>
         <Image src="/Logo.svg" width={176} height={0} alt="Picture of the author"
         />
