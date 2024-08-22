@@ -3,31 +3,34 @@ import React, { useEffect } from 'react';
 
 const ScrollBySteps = () => {
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = (event: WheelEvent) => {
       event.preventDefault(); // Prevent default scrolling behavior
 
-      const sections = document.querySelectorAll('section');
+      const sections = document.querySelectorAll<HTMLElement>('section');
       const scrollPosition = window.scrollY;
-      let targetSection = null;
+      let targetSection: HTMLElement | null = null;
 
       sections.forEach((section, index) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if (scrollPosition >= sectionTop - sectionHeight / 2 && scrollPosition < sectionTop + sectionHeight / 2) {
+        if (
+          scrollPosition >= sectionTop - sectionHeight / 2 &&
+          scrollPosition < sectionTop + sectionHeight / 2
+        ) {
           if (event.deltaY > 0) {
             // Scrolling down
-            targetSection = sections[index + 1];
+            targetSection = sections[index + 1] || null;
           } else {
             // Scrolling up
-            targetSection = sections[index - 1];
+            targetSection = sections[index - 1] || null;
           }
         }
       });
 
       if (targetSection) {
         window.scrollTo({
-          top: targetSection.offsetTop,
+          top: (targetSection as HTMLElement).offsetTop,
           behavior: 'smooth',
         });
       }
