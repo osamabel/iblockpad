@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='w-[1128px] flex flex-col items-end gap-y-[40px] ' >
+    <div className='w-[1128px] flex flex-col items-end gap-y-[40px] z-[1]' >
         <div className='w-full flex justify-start'>
           <img src="/INVEST.svg" alt="" className='animate-img ' />
         </div>

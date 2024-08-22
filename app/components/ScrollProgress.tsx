@@ -53,7 +53,7 @@ const ScrollProgress: React.FC<ScrollProgressProps> = ({ sectionId }) => {
   }, [isVisible, sectionId]);
 
   return (
-    <div className={`w-[1px] bg-[rgba(255,255,255,.5)] ${true && "expand"}`}>
+    <div className={`w-[1px] bg-[rgba(255,255,255,.5)] ${isVisible && "expand"}`}>
     </div>
   );
 };

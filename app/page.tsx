@@ -26,18 +26,18 @@ export default function Home() {
       </section>
 
 
-      <section id="about-section" className="min-h-screen flex items-start justify-center w-full relative bg-purple-950">
+      <section id="about-section" className="min-h-screen flex items-start justify-center w-full relative bg-puprple-950">
         <About />
-        <div className="w-[1128px] absolute top-0 h-full flex items-end">
+        <div className="w-[1128px] absolute top-0 h-full flex items-end z-[-1]">
           <div className="w-[72px] fade flex flex-col h-full items-center">
           <ScrollProgress sectionId="about-section" />
           </div>
         </div>
       </section>
     
-      <section id="services-section" className="min-h-screen flex items-start justify-center w-full relative bg-slate-950">
+      <section id="services-section" className="min-h-screen flex items-start justify-center w-full relative bg-slapte-950">
         <Services />
-        <div className="w-[1128px] absolute top-0 h-full flex items-end">
+        <div className="w-[1128px] absolute top-0 h-full flex items-end z-[-1]">
           <div className="w-[72px] fade flex flex-col h-full items-center">
           <ScrollProgress sectionId="services-section" />
           </div>
