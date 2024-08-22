@@ -1,10 +1,6 @@
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Black.eot');
     src: local('GraphikArabicBlack'), local('GraphikArabic-Black'),
-        url('../font/GraphikArabic-Black.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Black.woff2') format('woff2'),
-        url('../font/GraphikArabic-Black.woff') format('woff'),
         url('../font/GraphikArabic-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
@@ -13,22 +9,17 @@
 
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Bold.eot');
     src: local('GraphikArabicBold'), local('GraphikArabic-Bold'),
-        url('../font/GraphikArabic-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Bold.woff2') format('woff2'),
-        url('../font/GraphikArabic-Bold.woff') format('woff'),
-        url('../font/GraphikArabic-Bold.ttf') format('truetype');
+    url('../font/GraphikArabic-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-
+    
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Extralight.eot');
     src: local('GraphikArabicExtralight'), local('GraphikArabic-Extralight'),
-        url('../font/GraphikArabic-Extralight.eot?#iefix') format('embedded-opentype');
+    url('../font/GraphikArabic-Extralight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -37,7 +28,6 @@
 @font-face {
     font-family: 'Graphik Arabic';
     src: local('GraphikArabicLight'), local('GraphikArabic-Light'),
-        url('../font/GraphikArabic-Light.woff') format('woff'),
         url('../font/GraphikArabic-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -46,11 +36,7 @@
 
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Medium.eot');
     src: local('GraphikArabicMedium'), local('GraphikArabic-Medium'),
-        url('../font/GraphikArabic-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Medium.woff2') format('woff2'),
-        url('../font/GraphikArabic-Medium.woff') format('woff'),
         url('../font/GraphikArabic-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -59,10 +45,7 @@
 
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Regular.eot');
     src: local('GraphikArabicRegular'), local('GraphikArabic-Regular'),
-        url('../font/GraphikArabic-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Regular.woff') format('woff'),
         url('../font/GraphikArabic-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -71,11 +54,7 @@
 
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Thin.eot');
     src: local('GraphikArabicThin'), local('GraphikArabic-Thin'),
-        url('../font/GraphikArabic-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Thin.woff2') format('woff2'),
-        url('../font/GraphikArabic-Thin.woff') format('woff'),
         url('../font/GraphikArabic-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
@@ -84,11 +63,7 @@
 
 @font-face {
     font-family: 'Graphik Arabic';
-    src: url('../font/GraphikArabic-Super.eot');
     src: local('GraphikArabicSuper'), local('GraphikArabic-Super'),
-        url('../font/GraphikArabic-Super.eot?#iefix') format('embedded-opentype'),
-        url('../font/GraphikArabic-Super.woff2') format('woff2'),
-        url('../font/GraphikArabic-Super.woff') format('woff'),
         url('../font/GraphikArabic-Super.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -98,7 +73,7 @@
 @font-face {
     font-family: 'Graphik Arabic';
     src: local('GraphikArabicSemibold'), local('GraphikArabic-Semibold'),
-        url('../font/GraphikArabic-Semibold.woff2') format('woff2');
+        url('../font/GraphikArabic-Semibold.ttf') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;

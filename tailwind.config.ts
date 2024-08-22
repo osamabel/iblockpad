@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         'graphik-arabic': ['Graphik Arabic', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
         primary: '#5865F2', 

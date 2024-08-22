@@ -7,18 +7,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center h-screen">
       <Nav/>
-      <div className="w-[1128px] h-full relative bg-slate-700">
-        <div className="min-w-[96px] absolute right-0 h-full pt-[150px] flex flex-col items-center bg-emerald-300">
-          <div className="circle"></div>
-          <div className="path"></div>
-        </div>
-        <div className="">
-          <Hero/>
-          <About/>
-          {/* <About/>
-          <About/> */}
-        </div>
-      </div>
+      <Hero/>
     </main>
   );
 }
