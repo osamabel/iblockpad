@@ -6,6 +6,9 @@ const ScrollBySteps = () => {
     const handleScroll = (event: WheelEvent) => {
       event.preventDefault(); // Prevent default scrolling behavior
 
+      const threshold = 10; // Adjust this value to suit your needs
+      if (Math.abs(event.deltaY) < threshold) return; // Ignore small scrolls
+
       const sections = document.querySelectorAll<HTMLElement>('section');
       const scrollPosition = window.scrollY;
       let targetSection: HTMLElement | null = null;

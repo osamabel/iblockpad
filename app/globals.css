@@ -9,6 +9,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+*{
+border: 1px solid rgba(255,255,255,.1);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -68,7 +71,6 @@ body {
 }
 
 .ShadowCard{
-
   position: absolute; /* Position it absolutely within the main div */
   top: 0; /* Align to the top */
   left: 0; /* Align to the left */
@@ -159,3 +161,18 @@ body {
 }
 
 
+.slide{
+  transition: transform 0.8s all;
+  height: 0px;
+  overflow: hidden; /* Ensure content doesn't show until expanded */
+  transform: translateX(200px);
+  animation: slading 0.8s ease-in-out forwards;
+  animation-delay: .6s;
+}
+
+@keyframes slading {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

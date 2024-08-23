@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function About() {
-  
   return (
-    <div className="w-[1128px] flex pt-[250px] relative z-[1]">
+    <div className="w-[1128px] flex pt-[210px] relative z-[1]">
       <div className=" absolute right-[36px] top-0 flex items-end text-primary z-[2]">
         <img className="" src="/title.svg" alt="" />
         <h1 className="text-[33.75px] ">من نحن</h1>
@@ -12,7 +11,7 @@ export default function About() {
         <div className=" w-[50%] h-[200px] relative flip-container">
           <div className="ShadowCard"></div>
           <div className="w-full absolute flex flex-col card pb-[20px] h-[250px] flipper">
-            <div className="h-[100px] w-full flex justify-start">
+            <div className="h-[70px] w-full flex justify-start">
               <img className="" src="/section.svg" alt="" />
             </div>
             <p className="rtl font-light font-graphik-arabic px-[40px] leading-[30px]">
@@ -25,8 +24,8 @@ export default function About() {
         </div>
 
         <div className=" w-[50%] h-[200px] relative flip-container">
-          <div className="w-full absolute flex flex-col card pb-[20px] h-[250px] top-[80px] right-[-30px] flipper">
-            <div className="h-[100px] w-full flex justify-start">
+          <div className="w-full absolute flex flex-col card pb-[20px] h-[250px] top-[50px] right-[-30px] flipper">
+            <div className="h-[70px] w-full flex justify-start">
               <img className="" src="/section.svg" alt="" />
             </div>
             <p className="rtl font-light font-graphik-arabic px-[40px] leading-[30px]">
@@ -37,9 +36,9 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-[50%] h-[200px] relative flip-container">
-          <div className="w-full absolute flex flex-col card pb-[20px] h-[250px] top-[100px] right-[100px] flipper">
-            <div className="h-[100px] w-full flex justify-start">
+        <div className="w-[50%] h-[200px] relative flip-container" >
+          <div className="w-full absolute flex flex-col card pb-[20px] h-[250px] top-[80px] right-[100px] flipper">
+            <div className="h-[70px] w-full flex justify-start">
               <img className="" src="/section.svg" alt="" />
             </div>
             <p className="rtl font-light font-graphik-arabic px-[40px] leading-[30px]">
